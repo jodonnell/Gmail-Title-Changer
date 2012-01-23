@@ -1,0 +1,12 @@
+{
+  "name": "GMail title changer!",
+  "version": "1.0",
+  "description": "Changes the title of gmail to highlight inbox messages",
+  "permissions": ["tabs"],
+  "content_scripts": [
+      {
+	  "matches": ["http://mail.google.com/*", "https://mail.google.com/*"],
+	  "js": ["gmail_title.js"]
+      }
+  ]
+}
